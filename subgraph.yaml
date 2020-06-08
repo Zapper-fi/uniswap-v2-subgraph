@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: rinkeby
+    network: mainnet
     source:
       address: '0xe2f197885abe8ec7c866cFf76605FD06d4576218'
       abi: Factory
