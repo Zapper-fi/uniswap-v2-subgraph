@@ -116,7 +116,7 @@ type Mint @entity {
   # transaction hash + "-" + index in mints Transaction array
   id: ID!
   transaction: Transaction! @derivedFrom(field: "mints")
-  timestamp: BigInt! # need this to pull recent txns for specific token or pair 
+  timestamp: BigInt! # need this to pull recent txns for specific token or pair
 
   pair: Pair!
 
@@ -141,7 +141,7 @@ type Burn @entity {
   # transaction hash + "-" + index in mints Transaction array
   id: ID!
   transaction: Transaction! @derivedFrom(field: "burns")
-  timestamp: BigInt! # need this to pull recent txns for specific token or pair 
+  timestamp: BigInt! # need this to pull recent txns for specific token or pair
 
   pair: Pair!
 
@@ -166,7 +166,7 @@ type Swap @entity {
   # transaction hash + "-" + index in swaps Transaction array
   id: ID!
   transaction: Transaction! @derivedFrom(field: "swaps")
-  timestamp: BigInt! # need this to pull recent txns for specific token or pair 
+  timestamp: BigInt! # need this to pull recent txns for specific token or pair
 
   pair: Pair!
 
@@ -224,6 +224,7 @@ type PairDayData @entity {
 
   # derived liquidity
   reserveUSD: BigDecimal!
+  totalSupply: BigDecimal!
 
   # volume stats
   dailyVolumeToken0: BigDecimal!
