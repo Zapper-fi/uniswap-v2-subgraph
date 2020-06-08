@@ -143,6 +143,7 @@ export function updatePairDayData(event: EthereumEvent): void {
     pairDayData.date = dayStartTimestamp
     pairDayData.token0 = pair.token0
     pairDayData.token1 = pair.token1
+    pairDayData.totalSupply = pair.totalSupply
     pairDayData.pairAddress = event.address
     pairDayData.reserve0 = ZERO_BD
     pairDayData.reserve1 = ZERO_BD
